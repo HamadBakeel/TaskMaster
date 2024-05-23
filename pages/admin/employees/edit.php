@@ -39,7 +39,7 @@ ob_start();
                         <label for="Department" class="form-label">Department</label>
                         <input class="form-control" id="" type="text" name="department" value="<?php echo $employee['department']?>">
                     </div>
-                    <div class="mb-10">
+                    <div class="mb-10" style="display: none;">
                         <label for="Status" class="form-label">Status</label>
                         <select class="form-control" data-control="select2" data-placeholder="Status" name="status">
                                 <option value="1" <?php  $employee['status']==1??'';?>>True</option>

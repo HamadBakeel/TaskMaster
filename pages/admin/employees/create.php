@@ -37,12 +37,15 @@ ob_start();
                         <input class="form-control" id="" type="text" name="department" placeholder="Enter Department">
                     </div>
                     <div class="mb-10">
+                        <input class="form-control" value="1" type="hidden" name="status">
+                    </div>
+                    <!-- <div class="mb-10" style="display: none">
                         <label for="Status" class="form-label"> Working Status</label>
                         <select class="form-control" data-control="select2" data-placeholder="Status" name="status">
-                                <option value="1">True</option>
+                                <option value="1" selected>True</option>
                                 <option value="0">False</option>
                         </select>
-                    </div>
+                    </div> -->
                     <button type="submit" class="btn-bt">Create</button>
 
                 </form>

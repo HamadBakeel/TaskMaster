@@ -1,6 +1,4 @@
 <?php 
-
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $name = $_POST["name"];
@@ -15,11 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // Insert new employee data into the database
-    $sql = "INSERT INTO employees (name, phone, status, address,department, password) VALUES (:name, :phone, :status, :address,:department, :password)";
+    $sql = "INSERT INTO employees (name, phone, address,department, password) VALUES (:name, :phone, :address,:department, :password)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':phone', $phone);
-    $stmt->bindParam(':status', $status);
+    // $stmt->bindParam(':status', $status);
     $stmt->bindParam(':address', $address);
     $stmt->bindParam(':department', $department);
     $stmt->bindParam(':password', $hashed_password); 

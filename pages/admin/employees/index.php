@@ -21,7 +21,7 @@ ob_start();
                         <td>id</td>
                         <td>Name</td>
                         <td>Mobile</td>
-                        <td>Working Status</td>
+                        <!-- <td>Working Status</td> -->
                         <td>Address</td>
                         <td>Action</td>
                     </tr>
@@ -31,8 +31,8 @@ ob_start();
                         <tr>
                             <td><?php echo $employee['id']; ?></td>
                             <td><?php echo $employee['name']??''; ?></td>
-                            <td><?php echo $employee['mobile']??''; ?></td>
-                            <td><?php echo $employee['status']===0?'not working':'working'; ?></td>
+                            <td><?php echo $employee['phone']??''; ?></td>
+                            <!-- <td><?php echo $employee['status']===0?'not working':'working'; ?></td> -->
                             <td><?php echo $employee['address']??''; ?></td>
                             <td class="center-flex-sh">
                                 <form action="<?php echo admin_url('/employees/edit'); ?>" method="post">
