@@ -27,7 +27,11 @@
     }
 </style>
 <div class="sidebar bg-white p-20 p-relative">
-    <h3 class="p-relative txt-c mt-0">Sidebar</h3>
+    <h3 class="p-relative txt-c mt-0">
+        <a href="/smart" style="color: black">
+        TaskMaster
+        </a>
+    </h3>
     <ul>
         <li class="center-flex-1">
             <a class="d-flex between-flex fs-14 c-black rad-6 p-10" href="<?php echo admin_url(null); ?>">

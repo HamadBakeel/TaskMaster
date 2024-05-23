@@ -80,7 +80,8 @@ switch ($path) {
 
     //راوتات الموظف
     case '/login':
-        require 'empLogin.php';
+        // require 'empLogin.php';
+        require 'pages/login.php';
         break;
     case '/employee/login-check':
         require __DIR__ . '/controllers/employee/login.php';
@@ -94,6 +95,10 @@ switch ($path) {
         require __DIR__ . '/pages/employee/tasks.php';
         break;
 
+
+    // case '/general-login-check':
+    //     require __DIR__ . ;
+    //     break;
 
     default:
     
